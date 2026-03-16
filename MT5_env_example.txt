@@ -1,0 +1,50 @@
+# ╔══════════════════════════════════════════════════════════╗
+# ║         APEX FOREX — Environment Configuration          ║
+# ║         ALL FREE · MT5 Native · No OANDA needed         ║
+# ╚══════════════════════════════════════════════════════════╝
+# Copy this to .env and fill your values. Never commit .env to git.
+
+# ── MT5 / PU Prime ─────────────────────────────────────────
+# Your PU Prime account login number (shown in MT5 terminal)
+MT5_LOGIN=12345678
+
+# Your PU Prime account password
+MT5_PASSWORD=your_password_here
+
+# Exact server name — open MT5 → File → Open Account → look at server list
+# Common PU Prime servers: PUPrime-Live, PUPrime-Demo, PUPrimeLtd-Demo
+MT5_SERVER=PUPrimeLtd-Demo
+
+# Full path to your MT5 terminal executable (Windows path)
+# Default PU Prime install location:
+MT5_PATH=C:\Program Files\PU Prime MT5 Terminal\terminal64.exe
+
+# Set to "demo" while testing. Change to "live" ONLY after weeks of paper trading.
+MT5_MODE=demo
+
+# ── AI Brain — Anthropic Claude ───────────────────────────
+# Get free at: console.anthropic.com/api-keys
+ANTHROPIC_API_KEY=sk-ant-your-key-here
+
+# ── News Data — Finnhub (FREE) ────────────────────────────
+# Get free API key at: finnhub.io (no credit card needed)
+# Free tier: 60 calls/minute — more than enough
+FINNHUB_API_KEY=your_finnhub_key_here
+
+# ── Risk Controls ─────────────────────────────────────────
+MAX_RISK_PER_TRADE_PCT=1.5
+MAX_DAILY_DRAWDOWN_PCT=5.0
+MAX_CONCURRENT_TRADES=3
+MAX_TRADES_PER_DAY=10
+NEWS_PAUSE_MINUTES=15
+
+# ── Pairs to trade (MT5 symbol format — check your broker's Market Watch) ──
+# PU Prime common symbols — confirm these in your MT5 Market Watch tab
+TRADING_PAIRS=EURUSD,GBPUSD,USDJPY,AUDUSD,GBPJPY
+
+# ── Dashboard WebSocket ───────────────────────────────────
+WEBSOCKET_PORT=8765
+
+# ── Database (optional, for persistent history) ──────────
+# Leave blank to use in-memory storage only
+DATABASE_URL=

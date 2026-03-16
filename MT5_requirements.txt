@@ -1,0 +1,27 @@
+# APEX FOREX — Python Dependencies (All Free)
+# Install: pip install -r requirements.txt
+#
+# ⚠ MetaTrader5 is Windows-only.
+#   On Linux VPS: use mt5linux (via Wine) — see README
+
+# ── Core ──────────────────────────────────────────────────
+MetaTrader5==5.0.5640      # Official MetaQuotes MT5 Python API (Windows)
+# mt5linux==0.1.4          # Uncomment this line if running on Linux VPS
+
+# ── Async / Web ───────────────────────────────────────────
+httpx==0.27.0
+websockets==12.0
+
+# ── Data & Math ───────────────────────────────────────────
+pandas==2.2.2
+numpy==1.26.4
+
+# ── AI ────────────────────────────────────────────────────
+anthropic==0.28.0
+
+# ── News — Finnhub (Free) ─────────────────────────────────
+finnhub-python==2.4.20
+
+# ── Utils ─────────────────────────────────────────────────
+python-dotenv==1.0.1
+loguru==0.7.2
